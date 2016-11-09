@@ -1,0 +1,48 @@
+﻿<Window x:Class="GestureRecoginzerWithDTW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestureRecoginzerWithDTW"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="641.022" Width="907.873">
+    <Grid>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="29,12,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="56" Width="220"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="508,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="28" Width="91" RenderTransformOrigin="0.605,3.078"/>
+        <Grid Name="GestrureDisplayGrid" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,68,10,141">
+            <UniformGrid Name ="GestureCollection" Columns="10" Rows="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20" Background="White">
+                <Grid Margin="10" Name="caret">
+                    <Image Source="pictures/gestures/Caret.png" Height="50" Width="64" Stretch="UniformToFill" />
+                </Grid>
+                <Grid  Margin="10" Name="check">
+                    <Image Source="pictures/gestures/Check.png" Height="50" Width="64" Stretch="UniformToFill" />
+                </Grid>
+                <Grid  Margin="10" Name="circle">
+                    <Image Source="pictures/gestures/Circle.png"  Height="50" Width="64" Stretch="UniformToFill"/>
+                </Grid>
+                <Grid  Margin="10" Name="delete">
+                    <Image Source="pictures/gestures/Delete.png" Height="50" Width="64" Stretch="UniformToFill" />
+                </Grid>
+                <Grid  Margin="10" Name="lightning">
+                    <Image Source="pictures/gestures/Lightning.png"  Height="50" Width="64" Stretch="UniformToFill"/>
+                </Grid>
+                <Grid  Margin="10" Name="pigtail">
+                    <Image Source="pictures/gestures/Pigtail.png" Height="50" Width="64" Stretch="UniformToFill" />
+                </Grid>
+                <Grid  Margin="10" Name="question">
+                    <Image Source="pictures/gestures/Question_mark.png"  Height="50" Width="64" Stretch="UniformToFill"/>
+                </Grid>
+                <Grid  Margin="10" Name="rectangle">
+                    <Image Source="pictures/gestures/Rectangle.png"  Height="50" Width="64" Stretch="UniformToFill"/>
+                </Grid>
+                <Grid  Margin="10" Name="triangle">
+                    <Image Source="pictures/gestures/Triangle.png"  Height="50" Width="64" Stretch="UniformToFill"/>
+                </Grid>
+                <Grid  Margin="10" Name="x">
+                    <Image Source="pictures/gestures/X.png" Height="50" Width="64" Stretch="UniformToFill" />
+                </Grid>
+            </UniformGrid>
+        </Grid>
+        <Canvas Name="m_canvas" Margin="274,305,312,18" Width="300" Height="300"/>
+    </Grid>
+</Window>
